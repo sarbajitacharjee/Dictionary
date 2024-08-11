@@ -2,6 +2,8 @@
 
 A simple and user-friendly Dictionary App built with React and Tailwind CSS that allows users to search for definitions, phonetics, and pronunciations of words using the free [Dictionary API](https://dictionaryapi.dev/).
 
+# Demo link
+!(https://dictionary-phi-three.vercel.app/)
 ## Features
 
 - **Word Search:** Enter any word to get its definition, phonetic transcription, and pronunciation.
