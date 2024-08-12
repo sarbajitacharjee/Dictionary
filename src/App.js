@@ -56,9 +56,9 @@ const Dictionary = () => {
           <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-4 uppercase flex items-center justify-center">
               {results[0].word}
-              {results[0].phonetics && results[0].phonetics[0] && results[0].phonetics[0].audio && (
+              {results[0].phonetics && results[0].phonetics[0] &&( results[0].phonetics[0].audio || results[0].phonetics[1].audio )&& (
                 <button
-                  onClick={() => playAudio(results[0].phonetics[0].audio)}
+                  onClick={() => playAudio(results[0].phonetics[0].audio || results[0].phonetics[1].audio)}
                   className="ml-4 bg-blue-500 hover:bg-purple-500 text-white p-2 rounded-full transition duration-300 ease-in-out"
                   title="Play pronunciation"
                 >
