@@ -74,7 +74,7 @@ const Dictionary = () => {
                   <p className="font-bold text-xl text-purple-700 mb-2">{meaning.partOfSpeech}</p>
                   {meaning.definitions.map((definition, i) => (
                     <p key={i} className="ml-2 mb-4">
-                      <span className="font-semibold text-gray-700">- {definition.definition}</span>
+                    ➡️ <span className="font-semibold text-gray-700">- {definition.definition}</span>
                       {definition.example && (
                         <span className="block text-gray-500 italic ml-4">
                           <span className='text-blue-700 text-lg underline'>Example:</span> {definition.example}
