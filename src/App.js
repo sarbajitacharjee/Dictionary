@@ -59,14 +59,14 @@ const Dictionary = () => {
               {results[0].phonetics && results[0].phonetics[0] &&( results[0].phonetics[0].audio || results[0].phonetics[1].audio )&& (
                 <button
                   onClick={() => playAudio(results[0].phonetics[0].audio || results[0].phonetics[1].audio)}
-                  className="ml-4 bg-blue-500 hover:bg-purple-500 text-white p-2 rounded-full transition duration-300 ease-in-out"
+                  className="ml-4  hover:bg-purple-500 text-white p-2 rounded-full transition duration-300 ease-in-out"
                   title="Play pronunciation"
                 >
                   🔊
                 </button>
               )}
             </h2>
-            <p className="italic text-gray-600 mb-6 text-center">{results[0].phonetic}</p>
+            <p className="italic text-gray-600 mb-6 text-center">phonetic : {results[0].phonetic}</p>
             
             <ul className="space-y-6">
               {results[0].meanings.map((meaning, index) => (
@@ -77,7 +77,7 @@ const Dictionary = () => {
                       <span className="font-semibold text-gray-700">- {definition.definition}</span>
                       {definition.example && (
                         <span className="block text-gray-500 italic ml-4">
-                          <span className='text-blue-700'>Example:</span> {definition.example}
+                          <span className='text-blue-700 text-lg underline'>Example:</span> {definition.example}
                         </span>
                       )}
                     </p>
